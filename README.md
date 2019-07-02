@@ -1,7 +1,7 @@
 # PBS TV Schedules Service (TVSS) PHP Library
 
 This library abstracts interactions with the 
-[PBS TV Schedules Server API](https://docs.pbs.org/display/tvsapi).
+[PBS TV Schedules Service API](https://docs.pbs.org/display/tvsapi).
 
 ## Use
 
@@ -60,6 +60,9 @@ Search results are organized in `$program_results` and `$show_results`. Utility
 methods are provided to filter this results (`searchPrograms`, `searchShows`).
 
 ## Development goals
+
+See [CONTRIBUTING](CONTRIBUTING.md) for information about contributing to
+this project.
 
 ### v1
 

@@ -1,0 +1,65 @@
+{
+    "cid": "c1f4c5c0-85ba-4278-877e-4ec5ba8ae01a",
+    "external_id": "EP022687710023",
+    "show_id": "episode_57384",
+    "type": "episode",
+    "upcoming_shows": [
+        {
+            "cid": "69817abd-d8da-48fe-85af-37341c1a1f71",
+            "package_id": null,
+            "airing_type": "Taped",
+            "duration": 30,
+            "minutes": 30,
+            "nola_episode": "122",
+            "nola_root": "NCAT",
+            "season_premiere_finale": null,
+            "special_warnings": "",
+            "start_time": "1800",
+            "day": "20190717",
+            "feed": {
+                "cid": "cd649b6f-1df9-4498-8023-07eb2362e9a2",
+                "external_id": "20206",
+                "short_name": "KCTSDT2",
+                "full_name": "KCTS PBS Kids",
+                "timezone": "America/Los_Angeles",
+                "analog_channel": "9",
+                "digital_channel": "9.2"
+            },
+            "animated": false,
+            "closed_captions": true,
+            "hd": false,
+            "stereo": true
+        },
+        {
+            "cid": "387263a1-d1bc-4af1-8bc0-b24b7e0b3d07",
+            "package_id": null,
+            "airing_type": "Taped",
+            "duration": 30,
+            "minutes": 30,
+            "nola_episode": "122",
+            "nola_root": "NCAT",
+            "season_premiere_finale": null,
+            "special_warnings": "",
+            "start_time": "0200",
+            "day": "20190718",
+            "feed": {
+                "cid": "cd649b6f-1df9-4498-8023-07eb2362e9a2",
+                "external_id": "20206",
+                "short_name": "KCTSDT2",
+                "full_name": "KCTS PBS Kids",
+                "timezone": "America/Los_Angeles",
+                "analog_channel": "9",
+                "digital_channel": "9.2"
+            },
+            "animated": false,
+            "closed_captions": true,
+            "hd": false,
+            "stereo": true
+        }
+    ],
+    "description": "This animated series centers on house cat Fred, a dreamer of the great outdoors. Once his family leaves for the day, Fred becomes Nature Cat and with the help of his animal friends, he embarks on action-packed adventures that allow him to explore the natural world. The series is voiced by comic actors, including \"Saturday Night Live\" alums Taran Killam (Nature Cat), Kate McKinnon (Squeeks), Bobby Moynihan (Hal) and Kenan Thompson (Ronald). Kate Micucci rounds out the cast as Daisy.",
+    "program_id": 9610,
+    "title": "Nature Cat",
+    "episode_description": "A change in the weather may disrupt the gang's trip to Lookout Point; a series of mishaps plague Nature Cat as he makes his way to Cocono Cave.",
+    "episode_title": "Gimme Shelter; Goin' Batty"
+}

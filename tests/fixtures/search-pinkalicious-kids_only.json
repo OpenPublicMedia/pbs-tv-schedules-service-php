@@ -1,0 +1,35 @@
+{
+    "program_results": [
+        {
+            "cid": "f032f1eb-0fc8-4d96-be4a-3730a613816c",
+            "description": "The creative adventures of Pinkalicious and her brother, Peter.",
+            "external_id": "SH028433560000",
+            "title": "Pinkalicious & Peterrific",
+            "program_id": 4809
+        }
+    ],
+    "show_results": [
+        {
+            "cid": "8abcba59-972a-4450-9ab3-e8e9101fdd21",
+            "external_id": "EP028433560007",
+            "show_id": "episode_27668",
+            "type": "episode",
+            "description": "The creative adventures of Pinkalicious and her brother, Peter.",
+            "program_id": 4809,
+            "title": "Pinkalicious & Peterrific",
+            "episode_description": "Pinkalicious wakes up to find her whole body has turned pink -- and she's ecstatic; Pinkalicious tests out Mommy's invention, the Glitterizer.",
+            "episode_title": "Pinkalicious; Glitterizer"
+        },
+        {
+            "cid": "9e5c3a88-086f-4233-9e0f-f83975aaefcd",
+            "external_id": "EP028433560017",
+            "show_id": "episode_30097",
+            "type": "episode",
+            "description": "The creative adventures of Pinkalicious and her brother, Peter.",
+            "program_id": 4809,
+            "title": "Pinkalicious & Peterrific",
+            "episode_description": "Pinkalicious and her family volunteer to run the shop so Mr. Swizzle can fix his blender; Pinkalicious makes perfume to bring to Show-and-Tell.",
+            "episode_title": "Cha-Cha-Licious; Show and Smell"
+        }
+    ]
+}

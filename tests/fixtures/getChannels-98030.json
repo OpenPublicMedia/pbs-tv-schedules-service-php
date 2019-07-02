@@ -1,0 +1,225 @@
+{
+    "headends": [
+        {
+            "cid": "5ae5ddd0-dfe3-4f61-8604-ea011ef2b178",
+            "name": "DISH Seattle",
+            "feeds": [
+                {
+                    "cid": "f20cfd9f-4358-4b2b-b6c3-9ac4e67eb4c2",
+                    "short_name": "CAS",
+                    "full_name": "Classic Arts Showcase",
+                    "timezone": "America/New_York",
+                    "city": "Burbank",
+                    "state": "CA",
+                    "cable_number": "9406",
+                    "analog_channel_number": "",
+                    "digital_channel_number": ""
+                },
+                {
+                    "cid": "2a625426-3d83-4bf2-9236-f3c9a016f0ad",
+                    "short_name": "VME",
+                    "full_name": "V-Me",
+                    "timezone": "America/New_York",
+                    "city": "New York",
+                    "state": "NY",
+                    "cable_number": "846",
+                    "analog_channel_number": "",
+                    "digital_channel_number": ""
+                },
+                {
+                    "cid": "d7da89c1-9424-41cf-b70f-3774e0b1de26",
+                    "short_name": "TELE",
+                    "full_name": "Telemundo Television Network",
+                    "timezone": "America/New_York",
+                    "city": "Centennial",
+                    "state": "CO",
+                    "cable_number": "835",
+                    "analog_channel_number": "",
+                    "digital_channel_number": ""
+                },
+                {
+                    "cid": "4507d19c-1eae-422a-bf48-f8385b5d8ad7",
+                    "short_name": "BYUTV",
+                    "full_name": "KBYU",
+                    "timezone": "America/Denver",
+                    "city": "Provo",
+                    "state": "UT",
+                    "cable_number": "9403",
+                    "analog_channel_number": "",
+                    "digital_channel_number": ""
+                },
+                {
+                    "cid": "4507d19c-1eae-422a-bf48-f8385b5d8ad7",
+                    "short_name": "BYUTV",
+                    "full_name": "KBYU",
+                    "timezone": "America/Denver",
+                    "city": "Provo",
+                    "state": "UT",
+                    "cable_number": "4369",
+                    "analog_channel_number": "",
+                    "digital_channel_number": ""
+                },
+                {
+                    "cid": "9025a60d-8299-40de-b37f-243614efeb6f",
+                    "short_name": "JTV",
+                    "full_name": "Jewelry Television",
+                    "timezone": "America/New_York",
+                    "city": "Knoxville",
+                    "state": "TN",
+                    "cable_number": "083",
+                    "analog_channel_number": "",
+                    "digital_channel_number": ""
+                },
+                {
+                    "cid": "62fa5483-f2b8-4b39-b340-ae2bbdab78af",
+                    "short_name": "KBTCDT",
+                    "full_name": "KBTC HDTV",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Tacoma",
+                    "state": "WA",
+                    "cable_number": "028",
+                    "analog_channel_number": "27",
+                    "digital_channel_number": "28.1"
+                },
+                {
+                    "cid": "bde61caa-a9e1-457a-abf0-015dad5d6e5f",
+                    "short_name": "KBTC",
+                    "full_name": "KBTC",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Tacoma",
+                    "state": "WA",
+                    "cable_number": "8620",
+                    "analog_channel_number": "28",
+                    "digital_channel_number": ""
+                },
+                {
+                    "cid": "bde61caa-a9e1-457a-abf0-015dad5d6e5f",
+                    "short_name": "KBTC",
+                    "full_name": "KBTC",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Tacoma",
+                    "state": "WA",
+                    "cable_number": "028",
+                    "analog_channel_number": "28",
+                    "digital_channel_number": ""
+                },
+                {
+                    "cid": "a60a20d2-4ee4-4af2-9afe-d707374f13ff",
+                    "short_name": "KCTSDT",
+                    "full_name": "KCTS HDTV",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Seattle",
+                    "state": "WA",
+                    "cable_number": "009",
+                    "analog_channel_number": "9",
+                    "digital_channel_number": "9.1"
+                },
+                {
+                    "cid": "cce9e270-189c-4349-ad1d-a1508df996e3",
+                    "short_name": "KCTS",
+                    "full_name": "KCTS",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Seattle",
+                    "state": "WA",
+                    "cable_number": "8616",
+                    "analog_channel_number": "9",
+                    "digital_channel_number": ""
+                },
+                {
+                    "cid": "cce9e270-189c-4349-ad1d-a1508df996e3",
+                    "short_name": "KCTS",
+                    "full_name": "KCTS",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Seattle",
+                    "state": "WA",
+                    "cable_number": "009",
+                    "analog_channel_number": "9",
+                    "digital_channel_number": ""
+                }
+            ]
+        },
+        {
+            "cid": "c6221d5f-75e3-4d6a-9de1-12a6d790c590",
+            "name": "Broadcast TV - SEATTLE, BELLEVUE, KENT, RENTON",
+            "feeds": [
+                {
+                    "cid": "6ecdcaa4-a42d-4360-88a0-90131287f9ef",
+                    "short_name": "KCTSDT4",
+                    "full_name": "KCTS World",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Seattle",
+                    "state": "WA",
+                    "cable_number": "9.4",
+                    "analog_channel_number": "9",
+                    "digital_channel_number": "9.4"
+                },
+                {
+                    "cid": "c74e2c25-a121-46cd-ace2-f437d0ef5925",
+                    "short_name": "KBTCLD",
+                    "full_name": "KBTC",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Tacoma",
+                    "state": "WA",
+                    "cable_number": "28.1",
+                    "analog_channel_number": "16",
+                    "digital_channel_number": "28.1"
+                },
+                {
+                    "cid": "a9b60909-9e5a-4290-9004-202ee7aa307b",
+                    "short_name": "KBTCDT4",
+                    "full_name": "KBTC TVW",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Tacoma",
+                    "state": "WA",
+                    "cable_number": "28.4",
+                    "analog_channel_number": "27",
+                    "digital_channel_number": "28.4"
+                },
+                {
+                    "cid": "62fa5483-f2b8-4b39-b340-ae2bbdab78af",
+                    "short_name": "KBTCDT",
+                    "full_name": "KBTC HDTV",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Tacoma",
+                    "state": "WA",
+                    "cable_number": "28.1",
+                    "analog_channel_number": "27",
+                    "digital_channel_number": "28.1"
+                },
+                {
+                    "cid": "658789f5-d4d2-4117-8176-4e3affd7bac2",
+                    "short_name": "KCTSDT3",
+                    "full_name": "KCTS Create",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Seattle",
+                    "state": "WA",
+                    "cable_number": "9.3",
+                    "analog_channel_number": "9",
+                    "digital_channel_number": "9.3"
+                },
+                {
+                    "cid": "cd649b6f-1df9-4498-8023-07eb2362e9a2",
+                    "short_name": "KCTSDT2",
+                    "full_name": "KCTS PBS Kids",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Seattle",
+                    "state": "WA",
+                    "cable_number": "9.2",
+                    "analog_channel_number": "9",
+                    "digital_channel_number": "9.2"
+                },
+                {
+                    "cid": "a60a20d2-4ee4-4af2-9afe-d707374f13ff",
+                    "short_name": "KCTSDT",
+                    "full_name": "KCTS HDTV",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Seattle",
+                    "state": "WA",
+                    "cable_number": "9.1",
+                    "analog_channel_number": "9",
+                    "digital_channel_number": "9.1"
+                }
+            ]
+        }
+    ]
+}

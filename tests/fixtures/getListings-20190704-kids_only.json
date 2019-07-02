@@ -1,0 +1,159 @@
+{
+    "feeds": [
+        {
+            "cid": "6ecdcaa4-a42d-4360-88a0-90131287f9ef",
+            "external_id": "110268",
+            "short_name": "KCTSDT4",
+            "full_name": "KCTS World",
+            "timezone": "America/Los_Angeles",
+            "listings": [],
+            "analog_channel": "9",
+            "digital_channel": "9.4"
+        },
+        {
+            "cid": "a60a20d2-4ee4-4af2-9afe-d707374f13ff",
+            "external_id": "19631",
+            "short_name": "KCTSDT",
+            "full_name": "KCTS HDTV",
+            "timezone": "America/Los_Angeles",
+            "listings": [
+                {
+                    "cid": "bb97a921-c7fb-4e10-917a-735ea1d18d08",
+                    "package_id": null,
+                    "airing_type": "Taped",
+                    "duration": 30,
+                    "minutes": 30,
+                    "nola_episode": "132",
+                    "nola_root": "PIPE",
+                    "season_premiere_finale": null,
+                    "special_warnings": "",
+                    "start_time": "1030",
+                    "title": "Pinkalicious & Peterrific",
+                    "animated": false,
+                    "closed_captions": true,
+                    "hd": true,
+                    "stereo": true,
+                    "type": "episode",
+                    "show_id": "episode_116090",
+                    "program_id": 4809,
+                    "episode_title": "Best Day Ever; Catchy Song",
+                    "description": "The creative adventures of Pinkalicious and her brother, Peter.",
+                    "episode_description": "Pinkalicious and Peter decide to put on their own show after Jonah Rose's concert sells out; Pinkalicious writes a catchy song."
+                }
+            ],
+            "analog_channel": "9",
+            "digital_channel": "9.1"
+        },
+        {
+            "cid": "658789f5-d4d2-4117-8176-4e3affd7bac2",
+            "external_id": "20303",
+            "short_name": "KCTSDT3",
+            "full_name": "KCTS Create",
+            "timezone": "America/Los_Angeles",
+            "listings": [],
+            "analog_channel": "9",
+            "digital_channel": "9.3"
+        },
+        {
+            "cid": "cd649b6f-1df9-4498-8023-07eb2362e9a2",
+            "external_id": "20206",
+            "short_name": "KCTSDT2",
+            "full_name": "KCTS PBS Kids",
+            "timezone": "America/Los_Angeles",
+            "listings": [
+                {
+                    "cid": "1d5db741-b334-4a0a-acfc-57dcce9a808c",
+                    "package_id": null,
+                    "airing_type": "Taped",
+                    "duration": 30,
+                    "minutes": 30,
+                    "nola_episode": "130",
+                    "nola_root": "PIPE",
+                    "season_premiere_finale": null,
+                    "special_warnings": "",
+                    "start_time": "1530",
+                    "title": "Pinkalicious & Peterrific",
+                    "animated": false,
+                    "closed_captions": true,
+                    "hd": false,
+                    "stereo": true,
+                    "type": "episode",
+                    "show_id": "episode_115877",
+                    "program_id": 4809,
+                    "episode_title": "Lost Voice; Doll Hospital",
+                    "description": "The creative adventures of Pinkalicious and her brother, Peter.",
+                    "episode_description": "Pinkalicious loses her voice on the day of the class concert; Pinkalicious and Jasmine take care of all their dolls after one gets hurt."
+                },
+                {
+                    "cid": "3e27f2fe-6774-4656-9963-591e08fa838b",
+                    "package_id": null,
+                    "airing_type": "Taped",
+                    "duration": 30,
+                    "minutes": 30,
+                    "nola_episode": "130",
+                    "nola_root": "PIPE",
+                    "season_premiere_finale": null,
+                    "special_warnings": "",
+                    "start_time": "2330",
+                    "title": "Pinkalicious & Peterrific",
+                    "animated": false,
+                    "closed_captions": true,
+                    "hd": false,
+                    "stereo": true,
+                    "type": "episode",
+                    "show_id": "episode_115877",
+                    "program_id": 4809,
+                    "episode_title": "Lost Voice; Doll Hospital",
+                    "description": "The creative adventures of Pinkalicious and her brother, Peter.",
+                    "episode_description": "Pinkalicious loses her voice on the day of the class concert; Pinkalicious and Jasmine take care of all their dolls after one gets hurt."
+                }
+            ],
+            "analog_channel": "9",
+            "digital_channel": "9.2"
+        },
+        {
+            "cid": "cce9e270-189c-4349-ad1d-a1508df996e3",
+            "external_id": "10392",
+            "short_name": "KCTS",
+            "full_name": "KCTS",
+            "timezone": "America/Los_Angeles",
+            "listings": [
+                {
+                    "cid": "6d97a98f-b755-423d-8103-461da98a8c67",
+                    "package_id": null,
+                    "airing_type": "Taped",
+                    "duration": 30,
+                    "minutes": 30,
+                    "nola_episode": "132",
+                    "nola_root": "PIPE",
+                    "season_premiere_finale": null,
+                    "special_warnings": "",
+                    "start_time": "1030",
+                    "title": "Pinkalicious & Peterrific",
+                    "animated": false,
+                    "closed_captions": true,
+                    "hd": false,
+                    "stereo": true,
+                    "type": "episode",
+                    "show_id": "episode_116090",
+                    "program_id": 4809,
+                    "episode_title": "Best Day Ever; Catchy Song",
+                    "description": "The creative adventures of Pinkalicious and her brother, Peter.",
+                    "episode_description": "Pinkalicious and Peter decide to put on their own show after Jonah Rose's concert sells out; Pinkalicious writes a catchy song."
+                }
+            ],
+            "analog_channel": "9",
+            "digital_channel": ""
+        },
+        {
+            "cid": "317ce9be-5da1-4a03-a939-0fe3f0b3d83f",
+            "external_id": "37400",
+            "short_name": "ESKCTS",
+            "full_name": "KCTS Español",
+            "timezone": "America/Los_Angeles",
+            "listings": [],
+            "analog_channel": "9",
+            "digital_channel": ""
+        }
+    ]
+}

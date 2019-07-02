@@ -1,0 +1,118 @@
+{
+    "program_results": [
+        {
+            "cid": "cf92e8a7-cd53-4b37-b4ab-054499c438c0",
+            "description": "",
+            "external_id": "SH027825460000",
+            "title": "Pocahontas and the Survival of Jamestown",
+            "program_id": 9397
+        },
+        {
+            "cid": "642ee155-5538-4915-9ca0-7dc96af8a918",
+            "description": "Set in 17th-century Virginia, this drama series follows the lives of the first settlers in the English colony of Jamestown. Alice, Verity and Jocelyn arrive ready to marry three men in the colony who have paid for the women's transition to the New World. But upon their arrival, they quickly recognize the power struggles within the nascent community, which reach all the way up to the new governor and his staff. The women soon realize that they will need to rely on each other if they hope to survive the various challenges their new home presents to them.",
+            "external_id": "SH026692830000",
+            "title": "Jamestown",
+            "program_id": 10030
+        },
+        {
+            "cid": "3d70f2d3-e99f-4905-bd10-0aeac76329d3",
+            "description": "Las mujeres jóvenes que buscan una vida mejor llegan a la colonia inglesa de Jamestown en 1619, donde tienen la obligación de casarse con los primeros pobladores virginianos.",
+            "external_id": "SH030346030000",
+            "title": "Jamestown",
+            "program_id": 10338
+        },
+        {
+            "cid": "8884fadd-5300-4541-94ec-d64387541c37",
+            "description": "Throwback Thursdays' time capsule takes you back to the Jamestown Christmas Parade in 1984.",
+            "external_id": "SH030981250000",
+            "title": "Jamestown Christmas Parade 1984",
+            "program_id": 12002
+        },
+        {
+            "cid": "a670f7e4-732e-4389-b278-7bc13d7d4ae7",
+            "description": "",
+            "external_id": "SH032305710000",
+            "title": "Guardians of Jamestown: 1619",
+            "program_id": 25696
+        }
+    ],
+    "show_results": [
+        {
+            "cid": "d4e13ea1-ec66-4580-8f49-53fa51220ebe",
+            "external_id": "EP011291840083",
+            "show_id": "episode_5595",
+            "type": "episode",
+            "description": "",
+            "program_id": 2695,
+            "title": "Exploring Arkansas",
+            "episode_description": "",
+            "episode_title": "Fairy Tale Castle/ Jamestown Crag/ Asu Museum/ Historic Batesville"
+        },
+        {
+            "cid": "608ba095-641f-49af-b79d-eb9dac626b17",
+            "external_id": "EP004937100646",
+            "show_id": "episode_6695",
+            "type": "episode",
+            "description": "This long-running travel series continues to bring viewers to exotic destinations across the world, combining visits to popular tourist spots with a healthy sampling of more flavorful areas off the beaten path. Featuring a rotating cast of youthful presenters, these travelers dine on local delicacies, stay in traditional lodgings and attempt to interact with the residents. After all, it's only by \"living as the locals do\" that one can get a true understanding of a region and a better appreciation of its culture.",
+            "program_id": 7690,
+            "title": "Globe Trekker",
+            "episode_description": "Saint Helena, site of Napoleon's final years in exile; historic settlement of Jamestown; Longwood House; 180-year-old giant tortoise; the cliffside steps of Jacob's Ladder; climbing St. Helena's highest peak.",
+            "episode_title": "Isolated Islands: St. Helena"
+        },
+        {
+            "cid": "412905af-0bb2-449a-b53b-3b166f24569d",
+            "external_id": "EP004654660001",
+            "show_id": "episode_7882",
+            "type": "episode",
+            "description": "Historians provide lectures on pivotal events in American history.",
+            "program_id": 2884,
+            "title": "Primary Sources: Workshops in American History",
+            "episode_description": "The Jamestown settlement is a business operation for the Virginia Company.",
+            "episode_title": "The Virginia Company: America's Corporate Beginnings"
+        },
+        {
+            "cid": "2ac9ca81-578a-4c05-b6b4-f125a0884bdb",
+            "external_id": "EP000031630541",
+            "show_id": "episode_32212",
+            "type": "episode",
+            "description": "This long-running, award-winning documentary series focuses on science, its many applications, speculation, history and researchers. Inspired by the BBC documentary program \"Horizons, \" the U.S. series frequently features interviews with scientists directly involved in the topic at hand, and sometimes even boasts footage of a particular discovery.",
+            "program_id": 7588,
+            "title": "NOVA",
+            "episode_description": "Archaeologists discover Chief Powhatan's capital, revealing more of the American Indian aspects of the Jamestown story.",
+            "episode_title": "Pocahontas Revealed"
+        },
+        {
+            "cid": "596fe037-adab-447a-b6d2-a9560233e8a4",
+            "external_id": "EP026304150013",
+            "show_id": "episode_42799",
+            "type": "episode",
+            "description": "Exploring America by rail following Appleton's \"General Guide to the United States and Canada.\"",
+            "program_id": 5037,
+            "title": "Great American Railroad Journeys",
+            "episode_description": "Bottling bourbon corn whiskey; a tour of the Virginia state capitol building; cotillion ball; Colonial Williamsburg; USS Wisconsin; Jamestown, the first permanent English settlement in North America.",
+            "episode_title": "Manassas to Jamestown"
+        },
+        {
+            "cid": "c29d6186-d690-4f09-a977-33d77667a4b1",
+            "external_id": "EP003644950099",
+            "show_id": "episode_43067",
+            "type": "episode",
+            "description": "Experts use modern forensic techniques to shed new light on historical mysteries such as the sinking of the Andrea Doria and the riddle of whether a weather or geological event of some kind might have triggered the Dark Ages.",
+            "program_id": 7599,
+            "title": "Secrets of the Dead",
+            "episode_description": "Forensic anthropologists excavate the early American colony of Jamestown, Va., and find bones of a 14-year-old English girl.",
+            "episode_title": "Jamestown's Dark Winter"
+        },
+        {
+            "cid": "62cb755b-f5b8-4933-b899-a510542d183e",
+            "external_id": "EP007683020039",
+            "show_id": "episode_45259",
+            "type": "episode",
+            "description": "Journalist Joseph Rosendo likes to recall a quote from Mark Twain at the end of each episode of his Emmy Award-winning television series: \"Travel is fatal to prejudice, bigotry, and narrow-mindedness.\" Embracing that philosophy, \"Travelscope\" leads viewers on journeys to the world's most exotic locations with the goal of filling in the missing link between cultures. Rosendo provides not only insights on the numerous places he explores, but important travel information for the conscientious globe-trotter.",
+            "program_id": 7852,
+            "title": "Travelscope",
+            "episode_description": "Tracing America's birth in Jamestown, Colonial Williamsburg and Yorktown, Va.; kayaking the Chickahominy River; sailing on a four-masted schooner.",
+            "episode_title": "Williamsburg, Virginia -- America's Historic Triangle"
+        }
+    ]
+}

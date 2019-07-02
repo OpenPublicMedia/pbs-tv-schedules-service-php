@@ -1,0 +1,75 @@
+{
+    "program_results": [
+        {
+            "cid": "3d70f2d3-e99f-4905-bd10-0aeac76329d3",
+            "description": "Las mujeres jóvenes que buscan una vida mejor llegan a la colonia inglesa de Jamestown en 1619, donde tienen la obligación de casarse con los primeros pobladores virginianos.",
+            "external_id": "SH030346030000",
+            "title": "Jamestown",
+            "program_id": 10338
+        },
+        {
+            "cid": "642ee155-5538-4915-9ca0-7dc96af8a918",
+            "description": "Set in 17th-century Virginia, this drama series follows the lives of the first settlers in the English colony of Jamestown. Alice, Verity and Jocelyn arrive ready to marry three men in the colony who have paid for the women's transition to the New World. But upon their arrival, they quickly recognize the power struggles within the nascent community, which reach all the way up to the new governor and his staff. The women soon realize that they will need to rely on each other if they hope to survive the various challenges their new home presents to them.",
+            "external_id": "SH026692830000",
+            "title": "Jamestown",
+            "program_id": 10030
+        }
+    ],
+    "show_results": [
+        {
+            "cid": "7db5a471-7d1f-416a-a502-e436e8f278e7",
+            "external_id": "EP000044440970",
+            "show_id": "episode_65352",
+            "type": "episode",
+            "description": "This Emmy-winning home-improvement series takes the mystery and fright factors out of remodeling and carpentry chores.",
+            "program_id": 7571,
+            "title": "This Old House",
+            "episode_description": "Touring a 1920s bungalow in Rhode Island, which will be transformed into a larger net zero house.",
+            "episode_title": "Jamestown: The Net Zero Bungalow"
+        },
+        {
+            "cid": "150a4088-2593-4be2-9693-8f68ad008b21",
+            "external_id": "EP012152090524",
+            "show_id": "episode_65353",
+            "type": "episode",
+            "description": "Esta serie ganadora del Emmy sobre mejoramiento del hogar, toma el misterio y los factores de susto que causan una remodelación y las tareas de carpintería. Asimismo, va siguiendo la actualización de toda una casa durante varios episodios y la presentación de comerciantes tales como Norm Abram, Tom Silva, Richard Trethewey y Roger Cook, junto con el anfitrión Kevin O'Connor.",
+            "program_id": 7572,
+            "title": "This Old House",
+            "episode_description": "Visita a una cabaña de 1920 en Rhode Island, que será transformada en una casa más grande completamente nueva.",
+            "episode_title": "Jamestown: The Net Zero Bungalow"
+        },
+        {
+            "cid": "68ca7e8e-e269-449f-8708-e61ebb26044d",
+            "external_id": "EP000044440971",
+            "show_id": "episode_66153",
+            "type": "episode",
+            "description": "This Emmy-winning home-improvement series takes the mystery and fright factors out of remodeling and carpentry chores.",
+            "program_id": 7571,
+            "title": "This Old House",
+            "episode_description": "Removing shingles that contain asbestos; a manufacturer in Pennsylvania makes precast concrete walls; a historic tour of Jamestown, R.I.; placing foundation wall panels.",
+            "episode_title": "Jamestown: Net Zero From the Ground Up"
+        },
+        {
+            "cid": "63b2dc7f-421c-45fe-9524-d8a8ee4f6812",
+            "external_id": "EP026692830022",
+            "show_id": "episode_126585",
+            "type": "episode",
+            "description": "Set in 17th-century Virginia, this drama series follows the lives of the first settlers in the English colony of Jamestown. Alice, Verity and Jocelyn arrive ready to marry three men in the colony who have paid for the women's transition to the New World. But upon their arrival, they quickly recognize the power struggles within the nascent community, which reach all the way up to the new governor and his staff. The women soon realize that they will need to rely on each other if they hope to survive the various challenges their new home presents to them.",
+            "program_id": 10030,
+            "title": "Jamestown",
+            "episode_description": "Jamestown is transfixed when an extraordinary creature shows up; Silas faces consequences after attacking Yeardley; Jocelyn weakens Willmus.",
+            "episode_title": ""
+        },
+        {
+            "cid": "f45da7b6-802f-4e00-a34f-d54a3f4632c8",
+            "external_id": "EP030346030020",
+            "show_id": "episode_126632",
+            "type": "episode",
+            "description": "Las mujeres jóvenes que buscan una vida mejor llegan a la colonia inglesa de Jamestown en 1619, donde tienen la obligación de casarse con los primeros pobladores virginianos.",
+            "program_id": 10338,
+            "title": "Jamestown",
+            "episode_description": "Jamestown se paraliza cuando una criatura extraordinaria aparece. Silas enfrenta las consecuencias luego de atacar a Yeardley. Jocelyn debilita a Willmus.",
+            "episode_title": ""
+        }
+    ]
+}

@@ -6,6 +6,7 @@ namespace OpenPublicMedia\PbsTvSchedulesService;
 use BadMethodCallException;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Exception\GuzzleException;
+use GuzzleHttp\Psr7\Response;
 use OpenPublicMedia\PbsTvSchedulesService\Exception\ApiKeyRequiredException;
 use OpenPublicMedia\PbsTvSchedulesService\Exception\CallSignRequiredException;
 use RuntimeException;
@@ -52,11 +53,13 @@ class Client
      *   Station call sign.
      * @param string $base_uri
      *   Base API URI.
+     * @param array $options
+     *   Additional options to pass to Guzzle client.
      */
-    public function __construct($api_key = '', $call_sign = '', $base_uri = self::LIVE)
+    public function __construct($api_key = '', $call_sign = '', $base_uri = self::LIVE, array $options = [])
     {
         $this->callSign = strtolower($call_sign);
-        $options = ['base_uri' => $base_uri];
+        $options = ['base_uri' => $base_uri] + $options;
         if (!empty($api_key)) {
             $options['headers'] = ['X-PBSAUTH' => $api_key];
         }
@@ -79,6 +82,7 @@ class Client
             $endpoint = $this->callSign . '/' . $endpoint;
         }
         try {
+            /** @var Response $response */
             $response = $this->client->request('get', $endpoint);
         } catch (GuzzleException $e) {
             if ($e->getCode() == 403) {
@@ -89,7 +93,7 @@ class Client
             }
         }
         if ($response->getStatusCode() != 200) {
-            throw new RuntimeException($response->getReasonPhrase(), $response->getCode(), $response);
+            throw new RuntimeException($response->getReasonPhrase(), $response->getStatusCode());
         }
         $json = json_decode($response->getBody());
         return $json;

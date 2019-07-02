@@ -1,0 +1,20 @@
+{
+    "programs": [
+        {
+            "cid": "eeb74a78-6353-4add-9bb8-94c1ad19ee5c",
+            "description": "",
+            "external_id": "SH023360250000",
+            "title": "Your Legislators 2016",
+            "program_id": 23669,
+            "rovi": 0
+        },
+        {
+            "cid": "4dbf5f64-903b-425d-bd90-bf1deb498852",
+            "description": "",
+            "external_id": "SH006694270000",
+            "title": "Great South Carolinians",
+            "program_id": 23667,
+            "rovi": 0
+        }
+    ]
+}

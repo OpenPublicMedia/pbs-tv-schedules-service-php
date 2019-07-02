@@ -1,0 +1,151 @@
+{
+    "feeds": [
+        {
+            "cid": "6ecdcaa4-a42d-4360-88a0-90131287f9ef",
+            "external_id": "110268",
+            "short_name": "KCTSDT4",
+            "full_name": "KCTS World",
+            "timezone": "America/Los_Angeles",
+            "listings": [],
+            "analog_channel": "9",
+            "digital_channel": "9.4"
+        },
+        {
+            "cid": "a60a20d2-4ee4-4af2-9afe-d707374f13ff",
+            "external_id": "19631",
+            "short_name": "KCTSDT",
+            "full_name": "KCTS HDTV",
+            "timezone": "America/Los_Angeles",
+            "listings": [
+                {
+                    "cid": "48d3126b-7fa8-4d68-9cfb-25473d7d3b89",
+                    "package_id": null,
+                    "airing_type": "Taped",
+                    "duration": 30,
+                    "minutes": 30,
+                    "nola_episode": "127",
+                    "nola_root": "PIPE",
+                    "season_premiere_finale": null,
+                    "special_warnings": "",
+                    "start_time": "1030",
+                    "title": "Pinkalicious & Peterrific",
+                    "animated": false,
+                    "closed_captions": true,
+                    "hd": true,
+                    "stereo": true,
+                    "type": "episode",
+                    "show_id": "episode_96236",
+                    "program_id": 4809,
+                    "episode_title": "Pink Love; Duocorn"
+                }
+            ],
+            "analog_channel": "9",
+            "digital_channel": "9.1"
+        },
+        {
+            "cid": "658789f5-d4d2-4117-8176-4e3affd7bac2",
+            "external_id": "20303",
+            "short_name": "KCTSDT3",
+            "full_name": "KCTS Create",
+            "timezone": "America/Los_Angeles",
+            "listings": [],
+            "analog_channel": "9",
+            "digital_channel": "9.3"
+        },
+        {
+            "cid": "cd649b6f-1df9-4498-8023-07eb2362e9a2",
+            "external_id": "20206",
+            "short_name": "KCTSDT2",
+            "full_name": "KCTS PBS Kids",
+            "timezone": "America/Los_Angeles",
+            "listings": [
+                {
+                    "cid": "b6c2445b-04ed-4f9f-8d01-cfac8d6a06a1",
+                    "package_id": null,
+                    "airing_type": "Taped",
+                    "duration": 30,
+                    "minutes": 30,
+                    "nola_episode": "120",
+                    "nola_root": "PIPE",
+                    "season_premiere_finale": null,
+                    "special_warnings": "",
+                    "start_time": "1530",
+                    "title": "Pinkalicious & Peterrific",
+                    "animated": false,
+                    "closed_captions": true,
+                    "hd": false,
+                    "stereo": true,
+                    "type": "episode",
+                    "show_id": "episode_39047",
+                    "program_id": 4809,
+                    "episode_title": "Dream Salon; The Duck Stops Here"
+                },
+                {
+                    "cid": "0fd8ec74-d306-4451-a537-8545b9ac19fe",
+                    "package_id": null,
+                    "airing_type": "Taped",
+                    "duration": 30,
+                    "minutes": 30,
+                    "nola_episode": "120",
+                    "nola_root": "PIPE",
+                    "season_premiere_finale": null,
+                    "special_warnings": "",
+                    "start_time": "2330",
+                    "title": "Pinkalicious & Peterrific",
+                    "animated": false,
+                    "closed_captions": true,
+                    "hd": false,
+                    "stereo": true,
+                    "type": "episode",
+                    "show_id": "episode_39047",
+                    "program_id": 4809,
+                    "episode_title": "Dream Salon; The Duck Stops Here"
+                }
+            ],
+            "analog_channel": "9",
+            "digital_channel": "9.2"
+        },
+        {
+            "cid": "cce9e270-189c-4349-ad1d-a1508df996e3",
+            "external_id": "10392",
+            "short_name": "KCTS",
+            "full_name": "KCTS",
+            "timezone": "America/Los_Angeles",
+            "listings": [
+                {
+                    "cid": "5f356cd9-f7d6-43bd-a081-62ec00ec7f23",
+                    "package_id": null,
+                    "airing_type": "Taped",
+                    "duration": 30,
+                    "minutes": 30,
+                    "nola_episode": "127",
+                    "nola_root": "PIPE",
+                    "season_premiere_finale": null,
+                    "special_warnings": "",
+                    "start_time": "1030",
+                    "title": "Pinkalicious & Peterrific",
+                    "animated": false,
+                    "closed_captions": true,
+                    "hd": false,
+                    "stereo": true,
+                    "type": "episode",
+                    "show_id": "episode_96236",
+                    "program_id": 4809,
+                    "episode_title": "Pink Love; Duocorn"
+                }
+            ],
+            "analog_channel": "9",
+            "digital_channel": ""
+        },
+        {
+            "cid": "317ce9be-5da1-4a03-a939-0fe3f0b3d83f",
+            "external_id": "37400",
+            "short_name": "ESKCTS",
+            "full_name": "KCTS Español",
+            "timezone": "America/Los_Angeles",
+            "listings": [],
+            "analog_channel": "9",
+            "digital_channel": ""
+        }
+    ]
+}

@@ -1,0 +1,115 @@
+{
+    "headends": [
+        {
+            "cid": "9883c8c9-573c-4148-a712-fcb7949a6e40",
+            "name": "CenturyLink Prism - Seattle",
+            "feeds": [
+                {
+                    "cid": "4507d19c-1eae-422a-bf48-f8385b5d8ad7",
+                    "short_name": "BYUTV",
+                    "full_name": "KBYU",
+                    "timezone": "America/Denver",
+                    "city": "Provo",
+                    "state": "UT",
+                    "cable_number": "567",
+                    "analog_channel_number": "",
+                    "digital_channel_number": ""
+                },
+                {
+                    "cid": "2e76b920-fdbc-4390-a4ca-e73b6895cfcd",
+                    "short_name": "UKIDS",
+                    "full_name": "Universal Kids",
+                    "timezone": "America/New_York",
+                    "city": "Philadelphia",
+                    "state": "PA",
+                    "cable_number": "337",
+                    "analog_channel_number": "",
+                    "digital_channel_number": ""
+                },
+                {
+                    "cid": "a60a20d2-4ee4-4af2-9afe-d707374f13ff",
+                    "short_name": "KCTSDT",
+                    "full_name": "KCTS HDTV",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Seattle",
+                    "state": "WA",
+                    "cable_number": "1009",
+                    "analog_channel_number": "9",
+                    "digital_channel_number": "9.1"
+                },
+                {
+                    "cid": "9025a60d-8299-40de-b37f-243614efeb6f",
+                    "short_name": "JTV",
+                    "full_name": "Jewelry Television",
+                    "timezone": "America/New_York",
+                    "city": "Knoxville",
+                    "state": "TN",
+                    "cable_number": "428",
+                    "analog_channel_number": "",
+                    "digital_channel_number": ""
+                },
+                {
+                    "cid": "9025a60d-8299-40de-b37f-243614efeb6f",
+                    "short_name": "JTV",
+                    "full_name": "Jewelry Television",
+                    "timezone": "America/New_York",
+                    "city": "Knoxville",
+                    "state": "TN",
+                    "cable_number": "030",
+                    "analog_channel_number": "",
+                    "digital_channel_number": ""
+                },
+                {
+                    "cid": "658789f5-d4d2-4117-8176-4e3affd7bac2",
+                    "short_name": "KCTSDT3",
+                    "full_name": "KCTS Create",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Seattle",
+                    "state": "WA",
+                    "cable_number": "015",
+                    "analog_channel_number": "9",
+                    "digital_channel_number": "9.3"
+                },
+                {
+                    "cid": "cd649b6f-1df9-4498-8023-07eb2362e9a2",
+                    "short_name": "KCTSDT2",
+                    "full_name": "KCTS PBS Kids",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Seattle",
+                    "state": "WA",
+                    "cable_number": "010",
+                    "analog_channel_number": "9",
+                    "digital_channel_number": "9.2"
+                },
+                {
+                    "cid": "cce9e270-189c-4349-ad1d-a1508df996e3",
+                    "short_name": "KCTS",
+                    "full_name": "KCTS",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Seattle",
+                    "state": "WA",
+                    "cable_number": "009",
+                    "analog_channel_number": "9",
+                    "digital_channel_number": ""
+                }
+            ]
+        },
+        {
+            "cid": "35491166-9834-406c-8bfa-98befd0bf2fb",
+            "name": "Fidalgo Care Center",
+            "feeds": [
+                {
+                    "cid": "cce9e270-189c-4349-ad1d-a1508df996e3",
+                    "short_name": "KCTS",
+                    "full_name": "KCTS",
+                    "timezone": "America/Los_Angeles",
+                    "city": "Seattle",
+                    "state": "WA",
+                    "cable_number": "009",
+                    "analog_channel_number": "9",
+                    "digital_channel_number": ""
+                }
+            ]
+        }
+    ]
+}
