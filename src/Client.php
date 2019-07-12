@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 
 namespace OpenPublicMedia\PbsTvSchedulesService;
@@ -10,6 +11,7 @@ use GuzzleHttp\Psr7\Response;
 use OpenPublicMedia\PbsTvSchedulesService\Exception\ApiKeyRequiredException;
 use OpenPublicMedia\PbsTvSchedulesService\Exception\CallSignRequiredException;
 use RuntimeException;
+use stdClass;
 
 /**
  * PBS TV Schedules Service (TVSS) API Client.
@@ -47,20 +49,26 @@ class Client
      * Not all endpoints require an API key or call sign so all parameters to
      * this method are optional.
      *
-     * @param string $api_key
+     * @param string|null $api_key
      *   API key provided by PBS.
-     * @param string $call_sign
+     * @param string|null $call_sign
      *   Station call sign.
      * @param string $base_uri
      *   Base API URI.
      * @param array $options
      *   Additional options to pass to Guzzle client.
      */
-    public function __construct($api_key = '', $call_sign = '', $base_uri = self::LIVE, array $options = [])
-    {
-        $this->callSign = strtolower($call_sign);
+    public function __construct(
+        ?string $api_key = null,
+        ?string $call_sign = null,
+        string $base_uri = self::LIVE,
+        array $options = []
+    ) {
+        if ($call_sign) {
+            $this->callSign = strtolower($call_sign);
+        }
         $options = ['base_uri' => $base_uri] + $options;
-        if (!empty($api_key)) {
+        if ($api_key) {
             $options['headers'] = ['X-PBSAUTH' => $api_key];
         }
         $this->client = new GuzzleClient($options);
@@ -72,10 +80,10 @@ class Client
      * @param bool $include_call_sign
      *   Whether or not to include the call sign in the request URI.
      *
-     * @return object
+     * @return stdClass
      *   JSON decoded object with response data.
      */
-    public function get($endpoint, $include_call_sign = true)
+    public function get(string $endpoint, bool $include_call_sign = true): stdClass
     {
         if ($include_call_sign) {
             $this->callSignRequired();
@@ -95,12 +103,12 @@ class Client
         if ($response->getStatusCode() != 200) {
             throw new RuntimeException($response->getReasonPhrase(), $response->getStatusCode());
         }
-        $json = json_decode($response->getBody());
-        return $json;
+        $data = json_decode($response->getBody()->getContents());
+        return $data;
     }
 
     /**
-     * @param $date
+     * @param string $date
      *   Date filter in the format YYYYMMDD.
      * @param bool $kids_only
      *   Whether to return only kids listing results.
@@ -108,7 +116,7 @@ class Client
      * @return array
      *  Listings grouped under contained Channel objects.
      */
-    public function getListings($date, $kids_only = false)
+    public function getListings(string $date, bool $kids_only = false): array
     {
         $uri = 'day/' . $date;
         if ($kids_only) {
@@ -128,7 +136,7 @@ class Client
      * @return array
      *  Listings grouped under contained Channel objects.
      */
-    public function getToday($kids_only = false)
+    public function getToday(bool $kids_only = false): array
     {
         $uri = 'today';
         if ($kids_only) {
@@ -142,23 +150,23 @@ class Client
      * @param $show_id
      *   Show ID from API data.
      *
-     * @return object
+     * @return stdClass
      *   Single object with metadata properties.
      */
-    public function getShow($show_id)
+    public function getShow(string $show_id): stdClass
     {
         $response = $this->get('upcoming/show/' . $show_id);
         return $response;
     }
 
     /**
-     * @param $program_id
+     * @param string $program_id
      *   Program ID from API data.
      *
-     * @return object
+     * @return stdClass
      *   Single object with metadata properties.
      */
-    public function getProgram($program_id)
+    public function getProgram(string $program_id): stdClass
     {
         $response = $this->get('upcoming/program/' . $program_id);
         return $response;
@@ -170,26 +178,29 @@ class Client
      * @return array
      *   All program objects in the API.
      */
-    public function getPrograms()
+    public function getPrograms(): array
     {
         $response = $this->get('programs', false);
         return $response->programs;
     }
 
     /**
-     * @param $term
+     * @param string $term
      *   Text to search for (no partial matching).
      * @param bool $include_call_sign
      *   Whether to include the provided call sign with the request.
      * @param bool $kids_only
      *   Whether to limit the result to kids content.
      *
-     * @return object
+     * @return stdClass
      *   Two properties, "program_results" and "show_results", are arrays
      *   containing results for the corresponding object types.
      */
-    public function search($term, $include_call_sign = true, $kids_only = false)
-    {
+    public function search(
+        string $term,
+        bool $include_call_sign = true,
+        bool $kids_only = false
+    ): stdClass {
         if (!$include_call_sign && $kids_only) {
             throw new BadMethodCallException('Call sign must be included for kids only search.');
         }
@@ -203,7 +214,7 @@ class Client
     }
 
     /**
-     * @param $term
+     * @param string $term
      *   Text to search for (no partial matching).
      * @param bool $include_call_sign
      *   Whether to include the provided call sign with the request.
@@ -215,14 +226,17 @@ class Client
      *
      * @see Client::search()
      */
-    public function searchPrograms($term, $include_call_sign = true, $kids_only = false)
-    {
+    public function searchPrograms(
+        string $term,
+        bool $include_call_sign = true,
+        bool $kids_only = false
+    ): array {
         $results = $this->search($term, $include_call_sign, $kids_only);
         return $results->program_results;
     }
 
     /**
-     * @param $term
+     * @param string $term
      *   Text to search for (no partial matching).
      * @param bool $include_call_sign
      *   Whether to include the provided call sign with the request.
@@ -234,8 +248,11 @@ class Client
      *
      * @see Client::search()
      */
-    public function searchShows($term, $include_call_sign = true, $kids_only = false)
-    {
+    public function searchShows(
+        string $term,
+        bool $include_call_sign = true,
+        bool $kids_only = false
+    ): array {
         $results = $this->search($term, $include_call_sign, $kids_only);
         return $results->show_results;
     }
@@ -249,7 +266,7 @@ class Client
      *   Channel data from the query response.
      *
      */
-    public function getChannels($zip = null)
+    public function getChannels($zip = null): array
     {
         $uri = 'channels';
         if (!empty($zip)) {
@@ -266,7 +283,7 @@ class Client
      * @return array
      *   Feeds keyed by the Feed short name.
      */
-    public function getFeeds()
+    public function getFeeds(): array
     {
         $response = $this->get('today');
         $feeds = [];
@@ -280,7 +297,7 @@ class Client
     /**
      * Verifies that a call sign property is set.
      */
-    private function callSignRequired()
+    private function callSignRequired(): void
     {
         if (empty($this->callSign)) {
             throw new CallSignRequiredException();

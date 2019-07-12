@@ -1,4 +1,5 @@
 <?php
+declare(strict_types=1);
 
 
 namespace OpenPublicMedia\PbsTvSchedulesService\Test;
@@ -12,6 +13,7 @@ use OpenPublicMedia\PbsTvSchedulesService\Client;
 use OpenPublicMedia\PbsTvSchedulesService\Exception\ApiKeyRequiredException;
 use OpenPublicMedia\PbsTvSchedulesService\Exception\CallSignRequiredException;
 use PHPUnit\Framework\TestCase;
+use Psr\Http\Message\ResponseInterface;
 use RuntimeException;
 
 /**
@@ -48,13 +50,13 @@ class ClientTest extends TestCase
     }
 
     /**
-     * @param $name
+     * @param string $name
      *   Base file name for a JSON fixture file.
      *
-     * @return Response
+     * @return ResponseInterface
      *   Guzzle 200 response with JSON body content.
      */
-    private function jsonResponse($name)
+    private function jsonResponse(string $name): ResponseInterface
     {
         return new Response(
             200,
@@ -66,7 +68,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::get
      */
-    public function testApiKeyRequired()
+    public function testApiKeyRequired(): void
     {
         $this->mockHandler->append(new Response(204));
         $clientNoCallSign = new Client(
@@ -82,7 +84,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::get
      */
-    public function testCallSignRequired()
+    public function testCallSignRequired(): void
     {
         $this->mockHandler->append(new RequestException(
             'API key required.',
@@ -102,7 +104,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::get
      */
-    public function testGuzzleException()
+    public function testGuzzleException(): void
     {
         $this->mockHandler->append(new RequestException(
             'Bad request.',
@@ -116,7 +118,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::get
      */
-    public function testApiUnexpectedResponse()
+    public function testApiUnexpectedResponse(): void
     {
         $this->mockHandler->append(new Response(204));
         $this->expectException(RuntimeException::class);
@@ -126,7 +128,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::getListings
      */
-    public function testGetListings()
+    public function testGetListings(): void
     {
         $this->mockHandler->append($this->jsonResponse('getListings-20190704'));
         $listings = $this->client->getListings('20190704');
@@ -142,7 +144,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::getListings
      */
-    public function testGetListingsKidsOnly()
+    public function testGetListingsKidsOnly(): void
     {
         $this->mockHandler->append($this->jsonResponse('getListings-20190704-kids_only'));
         $listings = $this->client->getListings('20190704', true);
@@ -157,7 +159,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::getToday
      */
-    public function testGetToday()
+    public function testGetToday(): void
     {
         $this->mockHandler->append($this->jsonResponse('getToday'));
         $listings = $this->client->getToday();
@@ -173,7 +175,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::getToday
      */
-    public function testGetTodayKidsOnly()
+    public function testGetTodayKidsOnly(): void
     {
         $this->mockHandler->append($this->jsonResponse('getToday-kids_only'));
         $listings = $this->client->getToday(true);
@@ -188,7 +190,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::getShow
      */
-    public function testGetShow()
+    public function testGetShow(): void
     {
         $id = 'episode_57384';
         $this->mockHandler->append($this->jsonResponse('getShow-' . $id));
@@ -204,7 +206,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::getProgram
      */
-    public function testGetProgram()
+    public function testGetProgram(): void
     {
         $id = '7877';
         $this->mockHandler->append($this->jsonResponse('getProgram-' . $id));
@@ -220,7 +222,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::getPrograms
      */
-    public function testGetPrograms()
+    public function testGetPrograms(): void
     {
         $this->mockHandler->append($this->jsonResponse('getPrograms'));
         $programs = $this->client->getPrograms();
@@ -232,7 +234,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::search
      */
-    public function testSearch()
+    public function testSearch(): void
     {
         $term = 'jamestown';
         $this->mockHandler->append($this->jsonResponse('search-' . $term));
@@ -252,7 +254,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::search
      */
-    public function testSearchNoCallSign()
+    public function testSearchNoCallSign(): void
     {
         $term = 'jamestown';
         $this->mockHandler->append($this->jsonResponse('search-' . $term . '-no_call_sign'));
@@ -269,7 +271,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::search
      */
-    public function testSearchKidsOnly()
+    public function testSearchKidsOnly(): void
     {
         $term = 'pinkalicious';
         $this->mockHandler->append($this->jsonResponse('search-' . $term . '-kids_only'));
@@ -286,7 +288,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::searchPrograms
      */
-    public function testSearchPrograms()
+    public function testSearchPrograms(): void
     {
         $term = 'jamestown';
         $this->mockHandler->append($this->jsonResponse('search-' . $term));
@@ -298,7 +300,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::searchShows
      */
-    public function testSearchShows()
+    public function testSearchShows(): void
     {
         $term = 'jamestown';
         $this->mockHandler->append($this->jsonResponse('search-' . $term));
@@ -310,7 +312,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::getChannels
      */
-    public function testGetChannels()
+    public function testGetChannels(): void
     {
         $this->mockHandler->append($this->jsonResponse('getChannels'));
         $channels = $this->client->getChannels();
@@ -325,7 +327,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::getChannels
      */
-    public function testGetChannelsByZipCode()
+    public function testGetChannelsByZipCode(): void
     {
         $this->mockHandler->append($this->jsonResponse('getChannels-98030'));
         $channels = $this->client->getChannels('98030');
@@ -340,7 +342,7 @@ class ClientTest extends TestCase
     /**
      * @covers ::getFeeds
      */
-    public function testGetFeeds()
+    public function testGetFeeds(): void
     {
         $this->mockHandler->append($this->jsonResponse('getToday'));
         $feeds = $this->client->getFeeds();
