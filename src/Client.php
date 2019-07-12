@@ -69,7 +69,12 @@ class Client
         }
         $options = ['base_uri' => $base_uri] + $options;
         if ($api_key) {
-            $options['headers'] = ['X-PBSAUTH' => $api_key];
+            if (isset($options['headers']) && is_array($options['headers'])) {
+                $options['headers']['X-PBSAUTH'] = $api_key;
+            } else {
+                $options['headers'] = ['X-PBSAUTH' => $api_key];
+            }
+
         }
         $this->client = new GuzzleClient($options);
     }
