@@ -75,7 +75,6 @@ class Client
             } else {
                 $options['headers'] = ['X-PBSAUTH' => $api_key];
             }
-
         }
         $this->client = new GuzzleClient($options);
     }
