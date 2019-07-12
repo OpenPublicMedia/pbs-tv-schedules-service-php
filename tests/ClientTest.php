@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace OpenPublicMedia\PbsTvSchedulesService\Test;
 
 use BadMethodCallException;
+use DateTime;
 use GuzzleHttp\Exception\RequestException;
 use GuzzleHttp\Handler\MockHandler;
 use GuzzleHttp\Psr7\Request;
@@ -131,7 +132,7 @@ class ClientTest extends TestCase
     public function testGetListings(): void
     {
         $this->mockHandler->append($this->jsonResponse('getListings-20190704'));
-        $listings = $this->client->getListings('20190704');
+        $listings = $this->client->getListings(new DateTime());
         $this->assertIsArray($listings);
         $this->assertCount(6, $listings);
         $this->assertIsObject($listings[1]);
@@ -147,7 +148,7 @@ class ClientTest extends TestCase
     public function testGetListingsKidsOnly(): void
     {
         $this->mockHandler->append($this->jsonResponse('getListings-20190704-kids_only'));
-        $listings = $this->client->getListings('20190704', true);
+        $listings = $this->client->getListings(new DateTime(), true);
         $this->assertIsArray($listings);
         $this->assertCount(6, $listings);
         $this->assertIsObject($listings[1]);

@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace OpenPublicMedia\PbsTvSchedulesService;
 
 use BadMethodCallException;
+use DateTime;
 use GuzzleHttp\Client as GuzzleClient;
 use GuzzleHttp\Exception\GuzzleException;
 use GuzzleHttp\Psr7\Response;
@@ -113,17 +114,17 @@ class Client
     }
 
     /**
-     * @param string $date
-     *   Date filter in the format YYYYMMDD.
+     * @param DateTime $date
+     *   Date to filter for (time is ignored).
      * @param bool $kids_only
      *   Whether to return only kids listing results.
      *
      * @return array
      *  Listings grouped under contained Channel objects.
      */
-    public function getListings(string $date, bool $kids_only = false): array
+    public function getListings(DateTime $date, bool $kids_only = false): array
     {
-        $uri = 'day/' . $date;
+        $uri = 'day/' . $date->format('Ymd');
         if ($kids_only) {
             $uri .= '/kids';
         }
