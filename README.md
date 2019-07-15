@@ -3,6 +3,14 @@
 This library abstracts interactions with the 
 [PBS TV Schedules Service API](https://docs.pbs.org/display/tvsapi).
 
+## Installation
+
+Install via composer:
+
+```bash
+composer require openpublicmedia/pbs-tv-schedules-service-php
+```
+
 ## Use
 
 The primary class provided by this library is the 
@@ -16,8 +24,8 @@ to query the API's endpoints for schedule data.
 ```php
 use OpenPublicMedia\PbsTvSchedulesService\Client;
 
-$api_key = 'xxxxxxxxxxxxxx'
-$call_sign = 'xxxx'
+$api_key = 'xxxxxxxxxxxxxx';
+$call_sign = 'xxxx';
 
 $client = new Client($api_key, $call_sign);
 ```
