@@ -170,7 +170,8 @@ class Client
      * @return array
      *   Options for a Guzzle query.
      */
-    private function buildOptions(bool $fetch_images): array {
+    private function buildOptions(bool $fetch_images): array
+    {
         $options = [];
         if ($fetch_images) {
             $options['query'] = ['fetch-images' => true];
