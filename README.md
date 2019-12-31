@@ -1,6 +1,6 @@
 # PBS TV Schedules Service (TVSS) PHP Library
 
-This library abstracts interactions with the 
+This library abstracts interactions with the
 [PBS TV Schedules Service API](https://docs.pbs.org/display/tvsapi).
 
 ## Installation
@@ -13,7 +13,7 @@ composer require openpublicmedia/pbs-tv-schedules-service-php
 
 ## Use
 
-The primary class provided by this library is the 
+The primary class provided by this library is the
 `OpenPublicMedia\PbsTvSchedulesService\Client`. A `Client` instance can be used
 to query the API's endpoints for schedule data.
 
@@ -30,13 +30,14 @@ $call_sign = 'xxxx';
 $client = new Client($api_key, $call_sign);
 ```
 
-The `$api_key` and `$call_sign` parameters are optional, as not all endpoints 
+The `$api_key` and `$call_sign` parameters are optional, as not all endpoints
 require them.
 
 #### Getting listings for a day.
 
 ```php
-$results = $client->getListings('20190701');
+$today = new DateTime();
+$results = $client->getListings($today);
 var_dump(reset($results));
 class stdClass#45 (4) {
     public $cid => string(36) "6ecdcaa4-a42d-4360-88a0-90131287f9ef"
