@@ -145,6 +145,23 @@ class ClientTest extends TestCase
     /**
      * @covers ::getListings
      */
+    public function testGetListingsFetchImages(): void
+    {
+        $this->mockHandler->append($this->jsonResponse('getListings-20191231-fetch_images'));
+        $listings = $this->client->getListings(new DateTime());
+        $this->assertIsArray($listings);
+        $this->assertCount(1, $listings);
+        $this->assertIsObject($listings[0]);
+        $this->assertObjectHasAttribute('cid', $listings[0]);
+        $this->assertObjectHasAttribute('listings', $listings[0]);
+        $this->assertCount(4, $listings[0]->listings);
+        $this->assertObjectHasAttribute('images', $listings[0]->listings[0]);
+        $this->assertIsArray($listings[0]->listings[0]->images);
+    }
+
+    /**
+     * @covers ::getListings
+     */
     public function testGetListingsKidsOnly(): void
     {
         $this->mockHandler->append($this->jsonResponse('getListings-20190704-kids_only'));
