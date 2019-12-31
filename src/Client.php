@@ -159,7 +159,7 @@ class Client
         if ($kids_only) {
             $uri .= '/kids';
         }
-        $response = $this->get($uri, false, $this->buildOptions($fetch_images));
+        $response = $this->get($uri, true, $this->buildOptions($fetch_images));
         return $response->feeds;
     }
 
