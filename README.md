@@ -115,3 +115,11 @@ this project.
  - [x] Result/error handling
  - [x] GET wrappers for endpoints (`$client->getXXX()`)
  - [x] Search endpoints support  (`$client->search()`)
+
+### v2.x
+
+ - [ ] Create entities for response data
+   - [ ] Channel (???)
+   - [ ] Listing
+   - [ ] Image
+ - [ ] Swap "kids only" and "fetch images" parameters where appropriate
