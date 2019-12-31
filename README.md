@@ -54,6 +54,41 @@ class stdClass#45 (4) {
 Listings are returned in and organized by _channel_. Each object in the array
 contains a `$listings` property with listings data.
 
+#### Getting listings with images.
+
+```php
+$today = new DateTime();
+$results = $client->getListings($today, false, true);
+var_dump($results[0]->listings[0]);
+class stdClass#41 (25) {
+    [...]
+    public $images => array(19) {
+        [0] => class stdClass#33 (8) {
+          public $type => string(10) "image/jpeg"
+          public $image => string(84) "https://image.pbs.org/gracenote/pbsd.tmsimg.com/assets/p7879062_n183662_cc_v9_aa.jpg"
+          public $ratio => string(3) "3:4"
+          public $width => string(4) "1080"
+          public $height => string(4) "1440"
+          public $caption => string(10) "Ray Suarez"
+          public $updated_at => string(20) "2012-12-12T00:00:00Z"
+          public $external_profile => string(17) "Cast in Character"
+        }
+        [1] => class stdClass#34 (8) {
+          public $type => string(10) "image/jpeg"
+          public $image => string(84) "https://image.pbs.org/gracenote/pbsd.tmsimg.com/assets/p7879062_n191589_cc_v9_ab.jpg"
+          public $ratio => string(3) "3:4"
+          public $width => string(4) "1080"
+          public $height => string(4) "1440"
+          public $caption => string(10) "Gwen Ifill"
+          public $updated_at => string(20) "2013-09-04T21:02:00Z"
+          public $external_profile => string(17) "Cast in Character"
+        }
+        [...]
+    }
+    [...]
+}
+```
+
 #### Searching listings data.
 
 ```php

@@ -84,11 +84,15 @@ class Client
      *   API endpoint to query.
      * @param bool $include_call_sign
      *   Whether or not to include the call sign in the request URI.
+     * @param array $options
+     *   Options to pass directly to the Guzzle request.
      *
      * @return stdClass
      *   JSON decoded object with response data.
+     *
+     * TODO: In a v2, swap `$include_call_sign` and `$options` parameters.
      */
-    public function get(string $endpoint, bool $include_call_sign = true): stdClass
+    public function get(string $endpoint, bool $include_call_sign = true, array $options = []): stdClass
     {
         if ($include_call_sign) {
             $this->callSignRequired();
@@ -96,7 +100,7 @@ class Client
         }
         try {
             /** @var Response $response */
-            $response = $this->client->request('get', $endpoint);
+            $response = $this->client->request('get', $endpoint, $options);
         } catch (GuzzleException $e) {
             if ($e->getCode() == 403) {
                 throw new ApiKeyRequiredException();
@@ -117,17 +121,21 @@ class Client
      *   Date to filter for (time is ignored).
      * @param bool $kids_only
      *   Whether to return only kids listing results.
+     * @param bool $fetch_images
+     *   Whether to fetch images with the results.
      *
      * @return array
      *  Listings grouped under contained Channel objects.
+     *
+     * TODO: In a v2, swap `$kids_only` and `$fetch_images` parameters.
      */
-    public function getListings(DateTime $date, bool $kids_only = false): array
+    public function getListings(DateTime $date, bool $kids_only = false, bool $fetch_images = false): array
     {
         $uri = 'day/' . $date->format('Ymd');
         if ($kids_only) {
             $uri .= '/kids';
         }
-        $response = $this->get($uri);
+        $response = $this->get($uri, true, $this->buildOptions($fetch_images));
         return $response->feeds;
     }
 
@@ -137,18 +145,37 @@ class Client
      *
      * @param bool $kids_only
      *   Whether to return only kids listing results.
+     * @param bool $fetch_images
+     *   Whether to fetch images with the results.
      *
      * @return array
      *  Listings grouped under contained Channel objects.
+     *
+     * TODO: In a v2, swap `$kids_only` and `$fetch_images` parameters.
      */
-    public function getToday(bool $kids_only = false): array
+    public function getToday(bool $kids_only = false, bool $fetch_images = false): array
     {
         $uri = 'today';
         if ($kids_only) {
             $uri .= '/kids';
         }
-        $response = $this->get($uri);
+        $response = $this->get($uri, false, $this->buildOptions($fetch_images));
         return $response->feeds;
+    }
+
+    /**
+     * @param bool $fetch_images
+     *   Whether to add the "fetch-images" query parameter.
+     *
+     * @return array
+     *   Options for a Guzzle query.
+     */
+    private function buildOptions(bool $fetch_images): array {
+        $options = [];
+        if ($fetch_images) {
+            $options['query'] = ['fetch-images' => true];
+        }
+        return $options;
     }
 
     /**
