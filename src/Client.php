@@ -32,17 +32,13 @@ class Client
 
     /**
      * Client for handling API requests
-     *
-     * @var GuzzleClient
      */
-    protected $client;
+    protected GuzzleClient $client;
 
     /**
      * Station call sign.
-     *
-     * @var string
      */
-    public $callSign;
+    public string $callSign;
 
     /**
      * Client constructor.
@@ -112,8 +108,7 @@ class Client
         if ($response->getStatusCode() != 200) {
             throw new RuntimeException($response->getReasonPhrase(), $response->getStatusCode());
         }
-        $data = json_decode($response->getBody()->getContents());
-        return $data;
+        return json_decode($response->getBody()->getContents());
     }
 
     /**
@@ -168,7 +163,7 @@ class Client
      *   Whether to add the "fetch-images" query parameter.
      *
      * @return array
-     *   Options for a Guzzle query.
+     *   Guzzle query options.
      */
     private function buildOptions(bool $fetch_images): array
     {
@@ -188,8 +183,7 @@ class Client
      */
     public function getShow(string $show_id): stdClass
     {
-        $response = $this->get('upcoming/show/' . $show_id);
-        return $response;
+        return $this->get("upcoming/show/$show_id");
     }
 
     /**
@@ -201,8 +195,7 @@ class Client
      */
     public function getProgram(string $program_id): stdClass
     {
-        $response = $this->get('upcoming/program/' . $program_id);
-        return $response;
+        return $this->get("upcoming/program/$program_id");
     }
 
     /**
@@ -241,9 +234,7 @@ class Client
         if ($kids_only) {
             $uri .= '-kids';
         }
-        $uri .= '/' . $term;
-        $response = $this->get($uri, $include_call_sign);
-        return $response;
+        return $this->get("$uri/$term", $include_call_sign);
     }
 
     /**
@@ -299,7 +290,7 @@ class Client
      *   Channel data from the query response.
      *
      */
-    public function getChannels($zip = null): array
+    public function getChannels(mixed $zip = null): array
     {
         $uri = 'channels';
         if (!empty($zip)) {
@@ -319,10 +310,8 @@ class Client
     public function getFeeds(): array
     {
         $response = $this->get('today');
-        $feeds = [];
         foreach ($response->feeds as $feed) {
             unset($feed->listings);
-            $feeds[$feed->short_name] = $feed;
         }
         return $response->feeds;
     }

@@ -116,7 +116,11 @@ this project.
  - [x] GET wrappers for endpoints (`$client->getXXX()`)
  - [x] Search endpoints support  (`$client->search()`)
 
-### v2.x
+### v2
+
+- [x] PHP 8 support
+
+### v3.x
 
  - [ ] Create entities for response data
    - [ ] Channel (???)
