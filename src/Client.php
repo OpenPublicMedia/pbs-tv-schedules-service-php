@@ -28,7 +28,7 @@ class Client
      *
      * @url https://docs.pbs.org/display/tvsapi#TVSchedulesService(TVSS)API-ProductionAPIEndpoints
      */
-    const LIVE = "https://services.pbs.org/tvss/";
+    const LIVE = "https://tvss.services.pbs.org/tvss/";
 
     /**
      * Client for handling API requests
@@ -86,7 +86,7 @@ class Client
      * @return stdClass
      *   JSON decoded object with response data.
      *
-     * TODO: In a v2, swap `$include_call_sign` and `$options` parameters.
+     * TODO: In a v3, swap `$include_call_sign` and `$options` parameters.
      */
     public function get(string $endpoint, bool $include_call_sign = true, array $options = []): stdClass
     {
@@ -122,7 +122,7 @@ class Client
      * @return array
      *  Listings grouped under contained Channel objects.
      *
-     * TODO: In a v2, swap `$kids_only` and `$fetch_images` parameters.
+     * TODO: In a v3, swap `$kids_only` and `$fetch_images` parameters.
      */
     public function getListings(DateTime $date, bool $kids_only = false, bool $fetch_images = false): array
     {
@@ -146,7 +146,7 @@ class Client
      * @return array
      *  Listings grouped under contained Channel objects.
      *
-     * TODO: In a v2, swap `$kids_only` and `$fetch_images` parameters.
+     * TODO: In a v3, swap `$kids_only` and `$fetch_images` parameters.
      */
     public function getToday(bool $kids_only = false, bool $fetch_images = false): array
     {
