@@ -10,10 +10,10 @@ All code should adhere to the [PSR-2 Coding Standard](https://www.php-fig.org/ps
 
 - **Add tests!** - New/significantly refactored functionality must have tests.
 
-- **Document any change in behaviour** - Make sure the README and any other 
+- **Document any change in behaviour** - Make sure the README and any other
 relevant documentation are kept up-to-date.
 
-- **Consider our release cycle** - We try to follow SemVer. Randomly breaking 
+- **Consider our release cycle** - We try to follow SemVer. Randomly breaking
 public APIs is not an option.
 
 - **Create topic branches** - Don't ask us to pull from your master branch.
@@ -42,6 +42,12 @@ $ ./vendor/bin/phpunit
 
 ``` bash
 $ ./vendor/bin/phpcs
+```
+
+## Running PHPStan
+
+``` bash
+$ ./vendor/bin/phpstan
 ```
 
 **Happy coding**!
